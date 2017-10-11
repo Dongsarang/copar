@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+
+ #chooseText
+{ 
+	 background-color: #c2b7be;
+	 left: 409px; 
+	 top: 1065px; 
+	 position: absolute; 
+	 width: 190px;
+	 height: 25px;
+	 z-index:66;
+} 
+
+input[type=file], addPhoto {
+	color: #c2b7be;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#openDate
+{ 
+	background-color: #c2b7be;
+	 left: 407px; 
+	 top: 1175px; 
+	 position: absolute; 
+	 width: 83px;
+	 height: 28px;
+	 z-index:68;
+} 
+
+ #endDate 
+{ 
+	background-color: #c2b7be;
+	 left: 517px; 
+	 top: 1175px; 
+	 position: absolute; 
+	 width: 83px;
+	 height: 28px;
+	 z-index:69;
+} 
+
+#addInfoText
+{ 
+	 background-color: #c2b7be;
+	 left: 771px; 
+	 top: 1073px; 
+	 position: absolute; 
+	 width: 289px;
+	 height: 130px;
+	 z-index:58;
+} 

@@ -1,0 +1,176 @@
+@CHARSET "UTF-8";
+
+ #chooseText
+{ 
+	 background-color: #c2b7be;
+	 left: 416px; 
+	 top: 1090px; 
+	 position: absolute; 
+	 width: 190px;
+	 height: 25px;
+	 z-index:66;
+} 
+
+ #ShopName 
+{ 
+	 left: 305px; 
+	 top: 1155px; 
+	 position: absolute; 
+	 width: 75px;
+	 height: 15px;
+	 z-index:60;
+}
+
+ #addNameText
+{ 
+	
+	 background-color: #c2b7be;
+	 left: 416px; 
+	 top: 1140px; 
+	 position: absolute; 
+	 width: 190px;
+	 height: 25px;
+	 z-index:67;
+}
+
+input[type=file], addNameText{
+	text-align:left;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+ #Time 
+{ 
+	 left: 305px; 
+	 top: 1210px; 
+	 position: absolute; 
+	 width: 33px;
+	 height: 13px;
+	 z-index:62;
+}
+
+ #addInfo
+{ 
+	 left: 770px; 
+	 top: 1065px; 
+	 position: absolute; 
+	 width: 103px;
+	 height: 17px;
+	 z-index:62;
+}
+
+ #category
+{ 
+	 background-color: #c2b7be;
+	 left: 407px; 
+	 top: 1137px; 
+	 position: absolute; 
+	 width: 193px;
+	 height: 28px;
+	 z-index:67;
+} 
+
+
+#addInfoText
+{ 
+	 background-color: #c2b7be;
+	 left: 771px; 
+	 top: 1093px; 
+	 position: absolute; 
+	 width: 289px;
+	 height: 130px;
+	 z-index:58;
+} 
+
+input[type=text], addInfoText {
+    width: 100%;
+    padding: 12px 60px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+ #openTime
+{ 
+	 background-color: #c2b7be;
+	 left: 416px; 
+	 top: 1203px; 
+	 position: absolute; 
+	 width: 140px;
+	 height: 25px;
+	 z-index:68;
+} 
+
+ #endTime 
+{ 
+	 background-color: #c2b7be;
+	 left: 570px; 
+	 top: 1203px; 
+	 position: absolute; 
+	 width: 140px;
+	 height: 25px;
+	 z-index:69;
+} 
+ #addressText
+{
+	 background-color: #c2b7be;
+	 left: 416px; 
+	 top: 1314px; 
+	 position: absolute; 
+	 width: 192px;
+	 height: 27px;
+	 z-index:71;
+} 
+
+ #holidayText
+{ 
+	 background-color: #c2b7be;
+	 left: 416px; 
+	 top: 1256px; 
+	 position: absolute; 
+	 width: 192px;
+	 height: 27px;
+	 z-index:70;
+}
+ 
+ #file {
+	 left: 850px; 
+	 top: 1256px; 
+	 position: absolute; 
+	 width: 200px;
+	 height: 20px;
+	 z-index:60;
+}
+ 
+input[type=file], addPhoto {
+	color: #c2b7be;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#submit 
+{ 
+	 left: 635px; 
+	 top: 1380px; 
+	 position: absolute; 
+	 width: 110px;
+	 height: 33px;
+	 z-index:47;
+} 
+
+
+#addPhoto022 
+{ 
+	 left: 770px; 
+	 top: 1256px; 
+	 position: absolute; 
+	 width: 96px;
+	 height: 25px;
+	 z-index:47;
+}

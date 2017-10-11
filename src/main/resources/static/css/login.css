@@ -1,0 +1,74 @@
+@CHARSET "UTF-8";
+
+/*email address 입력칸 */
+ #emailAddress 
+{ 
+	 background-color: #e8e8e8;
+	 left: 303px; 
+	 top: 330px; 
+	 position: absolute; 
+	 width: 427px;
+	 height: 65px;
+	 z-index:7;
+}
+input[type=text], emailAddress {
+    width: 100%;
+    padding: 12px 60px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+ #mail_image
+{ 
+	 left: 309px; 
+	 top: 353px; 
+	 position: absolute; 
+	 width: 45px;
+	 height: 35px;
+	 z-index:12;
+} 
+
+/*password address 입력칸 */
+ #password 
+{ 
+	 background-color: #e8e8e8;
+	 left: 303px; 
+	 top: 410px; 
+	 position: absolute; 
+	 width: 427px;
+	 height: 64px;
+	 z-index:8;
+} 
+input[type=password], password {
+    width: 100%;
+    padding: 12px 60px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+ #password_image 
+{ 
+	 left: 309px; 
+	 top: 425px; 
+	 position: absolute; 
+	 width: 44px;
+	 height: 48px;
+	 z-index:13;
+} 
+
+
+#loginButton {
+	left: 303px; 
+	 top: 500px; 
+	 position: absolute; 
+	 width: 427px;
+	 height: 65px;
+	 z-index:9;
+}
+
+
+

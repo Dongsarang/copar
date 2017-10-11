@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	
+<!-- 2017.09.14 정다은 수정, 새 디자인 적용
+	 2017.09.15 정다은 수정
+	 2017.09.20 귤누르 수정, 링크 적용
+reference: https://www.w3schools.com/html/html_links.asp
+ 		   http://www.thymeleaf.org/doc/articles/standardurlsyntax.html-->
+ 
+<head>
+<title>main</title>
+<link rel="stylesheet" href="css/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body bgcolor="#FFFFFF"
+	style="background-image: url('images/background.png');">
+	<!-- Save for Web Slices (main.psd) -->
+	<table id="__01" width="1401" border="0" cellpadding="0"
+		cellspacing="0">
+		<tr>
+			<td width="1195" height="76" colspan="21"></td>
+			<td><a href="/register"><img id="main_02" src="images/main_02.png" width="81"
+				height="76" alt="" /></a></td>
+			<td><a href="/login"><img id="main_03" src="images/main_03.png" width="82"
+				height="76" alt="" /></a></td>
+			<td width="42" height="2500" rowspan="19"></td>
+			<td><img src="images/white.gif" width="1" height="76" alt="" /></td>
+		</tr>
+		
+		<!-- ****************************** 상단 바 버튼 *************************************** -->
+		<tr>
+			<td width="196" height="2424" rowspan="18"></td>
+			<td colspan="5"><a href="/">
+			<img id="Home" src="images/Home.png" width="158" height="54" alt="" /></a></td>
+			<td colspan="3"><a href="/about">
+			<img id="About" src="images/About.png" width="161" height="54" alt="" /></a></td>
+			<td colspan="3"><a href="/shops">
+			<img id="service" src="images/service.png" width="165" height="54" alt="" /></a></td>
+			<td colspan="5"><a href="/contact">
+			<img id="contact" src="images/contact.png" width="190" height="54" alt="" /></a></td>
+			<td width="488" height="958" colspan="6" rowspan="8"></td>
+			<td><img src="images/white.gif" width="1" height="54" alt="" /></td>
+		</tr>
+		
+		<!-- ****************************** 상단 바 버튼 *************************************** -->
+		<tr>
+			<td width="674" height="89" colspan="16"></td>
+			<td><img src="images/white.gif" width="1" height="89" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="372" height="397" colspan="10" rowspan="2"></td>
+			<td colspan="3"><a href="/">
+			<img id="cop_ar" src="images/cop-ar.png" width="224" height="39" alt="" /></a></td>
+			<td width="78" height="397" colspan="3" rowspan="2"></td>
+			<td><img src="images/white.gif" width="1" height="39" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="224" height="358" colspan="3"></td>
+			<td><img src="images/white.gif" width="1" height="358" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="46" height="441" rowspan="5"></td>
+			<td colspan="15"><img id="text" src="images/text.png"
+				width="628" height="289" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="289" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="628" height="28" colspan="15"></td>
+			<td><img src="images/white.gif" width="1" height="28" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="168" height="101" colspan="5" rowspan="2"></td>
+			<td colspan="3">
+			<img id="readMore" src="images/readMore.png" width="110" height="33" alt="" /></td>
+			<td width="350" height="101" colspan="7" rowspan="2"></td>
+			<td><img src="images/white.gif" width="1" height="33" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="110" height="68" colspan="3"></td>
+			<td><img src="images/white.gif" width="1" height="68" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="19" height="23"></td>
+			<td colspan="5">
+			<img id="aboutService" src="images/aboutService.png" width="212" height="23" alt="" /></td>
+			<td width="340" height="23" colspan="8"></td>
+			<td colspan="2">
+			<img id="service012" src="images/service-12.png" width="91" height="23" alt="" /></td>
+			<td width="454" height="23" colspan="5"><img
+				src="images/white.gif" width="454" height="23" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="23" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="605" height="61" colspan="14"><img
+				src="images/white.gif" width="605" height="61" alt="" /></td>
+			<td colspan="5" rowspan="2"><img id="sale" src="images/sale.png"
+				width="333" height="130" alt="" /></td>
+			<td width="224" height="1443" colspan="3" rowspan="9"><img
+				src="images/white.gif" width="224" height="1443" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="61" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="132" height="510" colspan="4" rowspan="5"><img
+				src="images/white.gif" width="132" height="510" alt="" /></td>
+			<td colspan="8" rowspan="3"><img id="serviceText"
+				src="images/serviceText.png" width="381" height="323" alt="" /></td>
+			<td width="92" height="510" colspan="2" rowspan="5"><img
+				src="images/white.gif" width="92" height="510" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="69" alt="" /></td>
+		</tr>
+		<tr>
+			<td colspan="5"><img id="event" src="images/event.png"
+				width="333" height="134" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="134" alt="" /></td>
+		</tr>
+		<tr>
+			<td colspan="5" rowspan="2"><img id="coupon"
+				src="images/coupon.png" width="333" height="144" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="120" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="381" height="187" colspan="8" rowspan="2"><img
+				src="images/white.gif" width="381" height="187" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="24" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="333" height="163" colspan="5"><img
+				src="images/white.gif" width="333" height="163" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="163" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="112" height="479" colspan="3" rowspan="2"><img
+				src="images/white.gif" width="112" height="479" alt="" /></td>
+			<td colspan="15"><img id="picture1" src="images/picture1.png"
+				width="784" height="312" alt="" /></td>
+			<td width="42" height="479" rowspan="2"><img
+				src="images/white.gif" width="42" height="479" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="312" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="493" height="167" colspan="11"><img
+				src="images/white.gif" width="493" height="167" alt="" /></td>
+			<td width="291" height="167" colspan="4"><img
+				src="images/white.gif" width="291" height="167" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="167" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="938" height="393" colspan="19"><img
+				src="images/white.gif" width="938" height="393" alt="" /></td>
+			<td><img src="images/white.gif" width="1" height="393" alt="" /></td>
+		</tr>
+		<tr>
+			<td><img src="images/white.gif" width="196" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="46" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="19" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="47" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="20" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="26" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="56" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="63" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="42" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="5" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="48" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="112" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="29" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="83" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="9" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="12" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="57" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="34" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="188" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="42" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="61" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="81" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="82" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="42" height="1" alt="" /></td>
+			<td></td>
+		</tr>
+	</table>
+	<!-- End Save for Web Slices -->
+</body>
+</html>

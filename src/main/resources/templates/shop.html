@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 2017.09.16 정다은 수정, 디자인 적용
+reference: https://www.w3schools.com/html/html_links.asp
+ 		   http://www.thymeleaf.org/doc/articles/standardurlsyntax.html -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<title>COP-AR</title>
+<link rel="stylesheet" href="css/shop.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+
+<body bgcolor="#FFFFFF" style="background-image: url('images/background.png');">
+	<!-- Save for Web Slices (shop.psd) -->
+	<form action="#" th:action="@{/shops}" th:object="${shopForm}" method="post" enctype="multipart/form-data">
+		<table id="__01" width="1401" border="0" cellpadding="0"
+			cellspacing="0">
+			<tr>
+				<td width="1195" height="76" colspan="23"></td>
+				<td><img id="shop_02" src="images/shop_02.png" width="81" height="76" alt="" /></td>
+				<td><img id="shop_03" src="images/shop_03.png" width="82" height="76" alt="" /></td>
+				<td width="42" height="2500" rowspan="26"></td>
+				<td><img src="images/white.gif" width="1" height="76" alt="" /></td>
+			</tr>
+			<!-- ****************************** 상단 바 버튼 *************************************** -->
+			<tr>
+				<td width="196" height="2424" rowspan="25"></td>
+			<td colspan="5"><a href="/">
+			<img id="Home" src="images/Home.png" width="158" height="54" alt="" /></a></td>
+			<td colspan="3"><a href="/about">
+			<img id="About" src="images/About.png" width="161" height="54" alt="" /></a></td>
+			<td colspan="3"><a href="/shops">
+			<img id="service" src="images/service.png" width="165" height="54" alt="" /></a></td>
+			<td colspan="5"><a href="/contact">
+			<img id="contact" src="images/contact.png" width="190" height="54" alt="" /></a></td>
+			<td width="488" height="958" colspan="6" rowspan="8"></td>
+			<td><img src="images/white.gif" width="1" height="54" alt="" /></td>
+			</tr>
+
+			<!-- ****************************** 상단 바 버튼 *************************************** -->
+			<tr>
+				<td width="674" height="89" colspan="19"></td>
+				<td><img src="images/white.gif" width="1" height="89" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="372" height="397" colspan="10" rowspan="2"></td>
+				<td colspan="7"><img id="cop_ar" src="images/cop-ar.png"
+					width="224" height="39" alt="" /></td>
+				<td width="78" height="397" colspan="2" rowspan="2"></td>
+				<td><img src="images/white.gif" width="1" height="39" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="224" height="358" colspan="7"><img
+					src="images/white.gif" width="224" height="358" alt="" /></td>
+				<td><img src="images/white.gif" width="1" height="358" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="46" height="1884" rowspan="21"><img
+					src="images/white.gif" width="46" height="1884" alt="" /></td>
+				<td colspan="18"><img id="text" src="images/text.png"
+					width="628" height="289" alt="" /></td>
+				<td><img src="images/white.gif" width="1" height="289" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="628" height="28" colspan="18"></td>
+				<td><img src="images/white.gif" width="1" height="28" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="168" height="154" colspan="4" rowspan="4"></td>
+				<td colspan="4"><img id="readMore" src="images/readMore.png"
+					width="110" height="33" alt="" /></td>
+				<td width="350" height="137" colspan="10" rowspan="3"></td>
+				<td><img src="images/white.gif" width="1" height="33" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="110" height="121" colspan="4" rowspan="3"></td>
+				<td><img src="images/white.gif" width="1" height="91" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="488" height="13" colspan="5"></td>
+				<td><img src="images/white.gif" width="1" height="13" alt="" /></td>
+			</tr>
+
+			<!-- ********************************** 입력 폼 ******************************************* -->
+			<tr>
+				<td width="250" height="17" colspan="6"></td>
+				<td colspan="5">
+				<img id="addInfo" src="images/addInfo.png" width="103" height="17" alt="" /></td>
+				<td width="485" height="22" colspan="4" rowspan="2"></td>
+				<td><img src="images/white.gif" width="1" height="17" alt="" /></td>
+			</tr>
+			<tr>
+				<!-- category를 고르는 부분 -->
+				<td width="58" height="1413" rowspan="15"></td>
+				<td colspan="2" rowspan="2">
+				<img id="choose" src="images/choose.png" width="108" height="25" alt="" /></td>
+				<td colspan="7" rowspan="2">
+				<select id="chooseText" name="category" size="1" >
+					<option value="rest"> Restaurant </option>
+					<option value="beve"> beverage </option>
+					<option value="cosm"> cosmetic </option>
+					<option value="pash"> fashion </option>
+					<option value="conv"> convini </option>
+				</select> </td>
+				<td width="275" height="5" colspan="9"></td>
+				<td><img src="images/white.gif" width="1" height="5" alt="" /></td>
+			</tr>
+			<tr>
+				<!-- information을 적는 부분 -->
+				<td width="173" height="271" colspan="5" rowspan="12"></td>
+				<td colspan="5" rowspan="5">
+				<textarea rows="10" cols="70" title="내용" id="addInfoText" name="explain"></textarea></td>
+				<td width="301" height="1408" colspan="3" rowspan="14"></td>
+				<td><img src="images/white.gif" width="1" height="20" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="298" height="27" colspan="9"></td>
+				<td><img src="images/white.gif" width="1" height="27" alt="" /></td>
+			</tr>
+			<tr><!-- shop 이름 입력 부분 -->
+				<td colspan="2">
+				<img id="ShopName" src="images/ShopName.png" width="75" height="15" alt="" /></td>
+				<td colspan="7"><input type="text" name="name"  id="addNameText" /></td>
+				<td><img src="images/white.gif" width="1" height="25" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="298" height="33" colspan="9"></td>
+				<td><img src="images/white.gif" width="1" height="33" alt="" /></td>
+			</tr>
+			<tr><!-- time 입력 부분 -->
+				<td colspan="2" rowspan="2">
+				<img id="Time" src="images/Time.png" width="108" height="26" alt="" /></td>
+				<td colspan="2" rowspan="2" width= "30" height="25">
+				<input type="text" name="startTime" size="10" id="openTime" />
+				<!-- <input type="time" name="startTime" size="30" id="openTime" /> --></td>
+
+				<td width="30" height="60" colspan="2" rowspan="3"></td>
+				<td colspan="3" rowspan="2" width= "30" height="25">
+				<input type="text" name="endTime" size="10" id="endTime" />
+				<!-- <input type="time" name="endTime" size="30" id="endTime" /> --></td>
+				<td><img src="images/white.gif" width="1" height="22" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="286" height="39" colspan="5" rowspan="3"></td>
+				<td><img src="images/white.gif" width="1" height="4" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="188" height="34" colspan="4"></td>
+				<td width="80" height="34" colspan="3"></td>
+				<td><img src="images/white.gif" width="1" height="34" alt="" /></td>
+			</tr>
+			<tr><!-- holiday 입력 부분 -->
+				<td colspan="2" rowspan="2">
+				<img id="holiday" src="images/holiday.png" width="108" height="26" alt="" /></td>
+				<td colspan="7" rowspan="2">
+				<input type="text" name= "holiday" size="30" id="holidayText" /></td>
+				<td><img src="images/white.gif" width="1" height="1" alt="" /></td>
+			</tr>
+			<tr><!-- 사진 올리는 부분 -->
+				<td colspan="2">
+				<img id="addPhoto022" src="images/addPhoto-22.png" width="96" height="25" alt="" /></td>
+				<td colspan="3">
+				<input type="file" name="file" id="file" /></td>
+				<td><img src="images/white.gif" width="1" height="25" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="298" height="32" colspan="9"></td>
+				<td width="286" height="1217" colspan="5" rowspan="5"></td>
+				<td><img src="images/white.gif" width="1" height="32" alt="" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<img id="address" src="images/address.png" width="108" height="25" alt="" /></td>
+				<td colspan="7">
+				<input type="text" name="address" size="30" id="addressText" /></td>
+				<td><img src="images/white.gif" width="1" height="25" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="298" height="1160" colspan="9" rowspan="3"></td>
+				<td><img src="images/white.gif" width="1" height="23" alt="" /></td>
+			</tr>
+			<tr>
+				<td width="54" height="1137" rowspan="2"></td>
+				<td colspan="2">
+				<input type="image" name="submit" value="" src="images/submit.png" id="submit"/></td>
+				<td width="9" height="1137" colspan="2" rowspan="2">
+				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" /></td>
+				<td><img src="images/white.gif" width="1" height="33" alt="" /></td>
+			</tr>
+			
+			<!-- ********************************** 입력 폼 ******************************************* -->
+			
+			<tr>
+				<td width="110" height="1104" colspan="2"><img
+					src="images/white.gif" width="110" height="1104" alt="" /></td>
+				<td><img src="images/white.gif" width="1" height="1104" alt="" /></td>
+			</tr>
+			<tr>
+				<td><img src="images/white.gif" width="196" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="46" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="58" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="54" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="54" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="2" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="78" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="27" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="3" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="2" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="48" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="30" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="54" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="28" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="82" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="8" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="1" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="21" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="75" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="3" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="3" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="184" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="138" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="81" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="82" height="1" alt="" /></td>
+				<td><img src="images/white.gif" width="42" height="1" alt="" /></td>
+			</tr>
+		</table>
+	</form>
+	<!-- End Save for Web Slices -->
+</body>
+</html>

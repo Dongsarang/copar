@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url(''strawberries-2563395.jpg);
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.wrapper {
+	width: 400px;
+	padding: 30px;
+	background: rgba(0, 0, 0, .5);
+	margin: 0 auto
+}
+
+.wrapper h2 {
+	text-transform: uppercase;
+	color: #e74c3c
+}
+
+.wrapper p {
+	color: #fff;
+	font-weight: bold
+}
+
+.wrapper input[type=text], .wrapper input[type=email], textarea {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+.wrapper a {
+	text-decoration: none;
+	background: #6CCCFF;
+	color: #fff;
+	display: block;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 15px;
+}

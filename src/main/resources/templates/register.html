@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 2017.09.14 정다은 수정, 새 디자인 적용
+	 2017.09.15 정다은 수정
+reference: https://www.w3schools.com/html/html_links.asp
+ 		   http://www.thymeleaf.org/doc/articles/standardurlsyntax.html
+ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>COP-AR</title>
+    <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body style="background-image: url('images/loginBack.png');">
+
+<div sec:authorize="isAuthenticated()">
+    <meta http-equiv="refresh" content="0;url=/" />
+</div>
+<form id="registerForm" th:action="@{/register}" th:object="${user}" method="post" autocomplete="off">
+    <table id="__01" width="1020" border="0" cellpadding="0" cellspacing="0">
+    	<tr>
+			<td width="1020" height="245" colspan="8"></td>
+		</tr>
+		<tr>
+			<td width="378" height="107" colspan="3" rowspan="2"></td>
+			<td colspan="3"><img id="createAccount"
+				src="images/createAccount.png" width="262" height="40" alt="" /></td>
+			<td width="380" height="107" colspan="2" rowspan="2"><img
+				src="images/white.gif" width="380" height="107" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="262" height="67" colspan="3"></td>
+		</tr>
+    
+    <!-- ********************************** 입력 폼 ******************************************* -->
+    	<tr>
+			<td width="297" height="668" rowspan="11">
+			<img src="images/white.gif" width="297" height="668" alt="" /></td>
+			
+			<td colspan="6">
+			<input form="registerForm" type="text" th:field="*{username}" name="username" id="emailAddress"/>
+			<img id="mail_image" src="images/mail_image.png" alt="" /></td>
+			<td th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</td>
+            <td th:if="${#fields.hasGlobalErrors()}" th:errors="*{global}">Global Error</td>
+			
+			<td width="299" height="668" rowspan="11">
+			<img src="images/white.gif" width="299" height="668" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="424" height="24" colspan="6">
+			<img src="images/white.gif" width="424" height="24" alt="" /></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<input form="registerForm" type="password" th:field="*{password}" name="password" id="password"/>
+			<img id="password_image" src="images/password_image.png"  alt="" /></td>
+			 <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</td>
+		</tr>
+		<tr>
+			<td><img id="checkBox" src="images/checkBox.png" width="32" height="37" alt="" /></td>
+			<td colspan="5">
+			<img id="checkBoxText" src="images/checkBoxText.png" width="392" height="37" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="424" height="42" colspan="6">
+			<img src="images/white.gif" width="424" height="42" alt="" /></td>
+		</tr>
+		<tr>
+			<td colspan="6" width="424" height="62" >
+			<input form="registerForm" type="image" value="create account" src="images/createAccountButton.png" id="registerButton"/>
+			</td>
+			</tr>
+
+       <!--  ********************************** 입력 폼 ******************************************* -->
+       <tr>
+			<td width="424" height="20" colspan="6"><img
+				src="images/white.gif" width="424" height="20" alt="" /></td>
+		</tr>
+		
+		<!-- 로그인 화면 링크 -->
+		<tr><td colspan="6"> <a href= "/login">
+			<img id="loginNow" src="images/loginNow.png" width="424" height="32" alt="" /></a>
+			</td>
+		</tr>
+		<tr>
+			<td width="424" height="118" colspan="6"><img
+				src="images/white.gif" width="424" height="118" alt="" /></td>
+		</tr>
+		<tr>
+			<td width="159" height="209" colspan="3" rowspan="2"><img
+				src="images/white.gif" width="159" height="209" alt="" /></td>
+			<td><img id="register_19" src="images/register_19.png"
+				width="106" height="33" alt="" /></td>
+			<td width="159" height="209" colspan="2" rowspan="2"></td>
+		</tr>
+		<tr>
+			<td width="106" height="176"></td>
+		</tr>
+		<tr>
+			<td><img src="images/white.gif" width="297" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="32" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="49" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="78" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="106" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="78" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="81" height="1" alt="" /></td>
+			<td><img src="images/white.gif" width="299" height="1" alt="" /></td>
+		</tr>
+    </table>
+</form>
+</body>
+</html>
